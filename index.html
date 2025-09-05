@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="images/loog.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                   
+            <ul>
+  <li><a href="#home" class="hover-underline">HOME</a></li>
+  <li><a href="#aboutus" class="hover-underline">ABOUT</a></li>
+  <li><a href="#clubs" class="hover-underline">CLUBS</a></li>
+  <li><a href="#blog" class="hover-underline">FOUNDATIONS</a></li>
+  <li><a href="#contact" class="hover-underline">CONTACT</a></li>
+  <li><a href="#login" class="hover-underline"><i class="fa-solid fa-user"></i> Login</a></li>
+</ul>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <section class="headcontainer">
+                
+                <div class="text-box">
+                   <h3 style="color: white;">Hello,</h3>
+
+                    <p>Welcome to<br>
+                   <span style="color: rgb(91, 3, 3); font-size: 40px;">M</span><span style="color: #c6db04;font-size: 40px;">H</span><span style="color: #7b6d12;font-size: 40px;">S</span> -MVURWI HIGH SCHOOL<br> </p>
+                    <a href="#" class="btn">
+                       <span class="text text-1">- Let’s get started</span>
+                       <span class="text text-2" aria-hidden="true">Lets Go!!</span>
+                   </a>  
+                </div>
+            
+            </section>
+        </section>
+        <section class="aboutus" id="aboutus"> <!-- ABOUT -->
+
+            <div class="heading">
+  <h1 style="color: rgb(133, 5, 9);">About us</h1>
+  <p>MVURWI HIGH SCHOOL</p>
+</div>
+
+<div class="container">
+  <section class="about">
+    <div class="about-img">
+      <img src="images/aboutus.jpg" alt="About MHS">
+    </div>
+
+    <div class="about-content">
+      <h2>FOR THE BEST IGNITION OF CURIOSITY & INSPIRATIONAL DISCOVERY TO IMPACT THE WORLD</h2>
+      <p>
+        The school was founded on November 19, 1988. Situated in the town of Mvurwi, along the Mvurwi-Mutorashanga Highway.
+        It has an enrolment of approximately 1,500 students. The school employs around 55 teachers and 8 ancillary staff.
+      </p>
+
+      <!-- Hidden extra content -->
+      <div class="more-info" style="display: none;">
+        <p>
+          Mvurwi High School prides itself on academic excellence, leadership development, and holistic education.
+          Our curriculum spans sciences, commercials, agriculture, and arts—empowering students to thrive in diverse fields.<br><br>
+          We host vibrant clubs such as Quiz & Debate, Science & Research, and Netball, fostering both intellectual and physical growth.
+          Our alumni have gone on to impact communities locally and globally, carrying forward the MHS legacy of innovation and integrity.
+        </p>
+      </div>
+
+      <!-- Read More Button -->
+      <button class="read-more" onclick="toggleMoreInfo()">Read More</button>
+    </div>
+  </section>
+</div>
+
+<!-- Footer Credit -->
+<div class="credit">Copyright MHS @2025, Developed by J.Muzemi</div>
+
+<!-- JavaScript for Read More Toggle -->
+<script>
+  function toggleMoreInfo() {
+    const moreInfo = document.querySelector('.more-info');
+    const button = document.querySelector('.read-more');
+    if (moreInfo.style.display === 'none') {
+      moreInfo.style.display = 'block';
+      button.textContent = 'Read Less';
+    } else {
+      moreInfo.style.display = 'none';
+      button.textContent = 'Read More';
+    }
+  }
+</script>
+
+        </section>
+        <section class="subjects">
+
+            <h1 class="heading" style="color: #470202; font-weight: bold;">OUR MAIN PROGRAMS</h1>
+    
+            <div class="box-container">
+    
+                <div class="box">
+                    <img src="images/kids.jpg" alt="">
+                    <h3>SCIENCES</h3>
+                    <a href="#" class="course-btn">Learn More</a>  
+                </div>
+    
+                <div class="box">
+                    <img src="images/ssc.webp" alt="">
+                    <h3>COMMECIALS</h3>
+                    <a href="#" class="course-btn">Learn More</a>
+                </div>
+    
+                <div class="box">
+                    <img src="images/sc1.jpg" alt="">
+                    <h3>AGRICULTURE</h3>
+                    <a href="#" class="course-btn">Learn More</a>
+                </div>
+    
+                <div class="box">
+                    <img src="images/sc3.jpeg" alt="">
+                    <h3>ARTS & SPORTING</h3>
+                    <a href="#" class="course-btn">Learn More</a>
+                </div>
+    
+            </div>
+    
+        </section>
+
+        <section class="clubs" id="clubs">
+            <div class="clubcontainer">
+                    <h2>RECREATIONAL ACTIVITIES</h2>
+                    <p id="paragraph">@MHS2025</p>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="images/quiz.png">
+                            <div class="content">
+                                <h3>QUIZ & DEBATE</h3>
+                                <p>Intellect in Action: Proven Excellence in Quiz & Debate Arenas</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card">
+                            <img src="images/lab.png">
+                            <div class="content">
+                                <h3>SCIENCE & RESEARCH</h3>
+                                <p>- 🧪 Hands-On Experiments: From chemistry reactions to physics demos, students dive into real-world science.
+</p>
+                            </div>
+                        </div>
+                   
+                        <div class="card">
+                            <img src="images/netball.png">
+                            <div class="content">
+                                <h3>NETBALL</h3>
+                                <p>- Dominated regional matchups with a near-perfect win rate
+</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+
+           <h1 class="heading" style="color: #d6c503; font-weight: bold;">Our Foundation Cores</h1>
+    
+            <div class="box-container">
+    
+                <div class="box">
+                    <div class="image shine">
+                        <img src="images/jee.jpeg" alt="">
+                        <h3><i class="fas fa-star"></i></h3>
+                    </div>
+                    <div class="content">
+                        <h3>Be a Master and Innovate new things</h3>
+                        <p>Boost your preparation for ZIMSEc Main exam with Video E-Lessons & 
+                             Mock Tests.</p>
+                        <a href="#" class="btn">
+                            <span class="text text-1">read more</span>
+                            <span class="text text-2" aria-hidden="true">ACADEMIC</span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image shine">
+                        <img src="images/ent.jpg" alt="">
+                        <h3><i class="fas fa-star"></i></h3>
+                    </div>
+                    <div class="content">
+                        <h3>Get Trained and be a Successful Entrepreneur</h3>
+                        <p>Ideas ignite here. Futures take flight-( pitch, plan, and profit.)</p>
+                        <a href="#" class="btn">
+                            <span class="text text-1">read more</span>
+                            <span class="text text-2" aria-hidden="true">Entrepreneur</span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image shine">
+                        <img src="images/cult.jpeg" alt="">
+                        <h3><i class="fas fa-star"></i></h3>
+                    </div>
+                    <div class="content">
+                        <h3>📚 Academic Integrity & Responsibility</h3>
+                        <p>Dance, Drama, Music, and storytelling all to build pride and identity.</p>
+                        <a href="#" class="btn">
+                            <span class="text text-1">read more</span>
+                            <span class="text text-2" aria-hidden="true">CULTURE</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image shine">
+                        <img src="images/sports.png" alt="">
+                        <h3><i class="fas fa-star"></i></h3>
+                    </div>
+                    <div class="content">
+                        <h3>Be Complete and Shine Globally</h3>
+                        <p>Train. Rise. Represent."  "From Classroom to Podium—We Build Athletes.
+</p>
+                        <a href="#" class="btn">
+                            <span class="text text-1">read more</span>
+                            <span class="text text-2" aria-hidden="true">SPORTING</span>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+        <section class="reachus">
+           
+            <div class="one">
+                <form action="" class="two">
+                    <div class="three">
+                        
+                       <h1 style="color: orangered;">REACH US</h1>
+                        <hr>
+    
+                    </div>
+                    <input type="text" name="name" placeholder="Your Name" class="four" required>
+                    <input type="email" name="email" placeholder="Your Email" class="four" required>
+                    <textarea rows="30" cols="50" name="message" placeholder="Your Message" class="four" required></textarea>
+                    <button type="submit">Submit</button>
+                 </form>
+            </div>
+
+        </section>
+
+        <section class="footer">
+            <section class="contact" id="contact"></section>
+
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3>find us here</h3>
+                    <p>@MHS.........</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h3>contact us</h3>
+                    <p>+263 77 285 0097</p>
+                     <p>www.mvurwihigh.ac.zw</p>
+                    <a href="#" class="link">mvurwihigh@gmail.com</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Address</h3>
+                    <p>MVURWI HIGH SCHOOL <br>
+                    P.O. BOX 167, MVURWI<br>
+                    ZIMBABWE</p>
+                </div>
+    
+            </div>
+            <div class="credit">Copyright MHS @2025, Developed by J.Muzemi  <span>UNITY, DEVELOPMENT & SUCCESS </span></div>
+        </section>
+
+
+        <script>
+            var navLinks =document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

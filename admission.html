@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form - MHS</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS -->
+</head>
+<body>
+
+  <section class="admission-form">
+    <form action="submit_admission.php" method="post">
+  <!-- form fields stay the same -->
+
+    <h2 style="color: white;">Admission Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="program">Select Program:</label><br>
+      <select id="program" name="program">
+        <option value="sciences">Sciences</option>
+        <option value="commercials">Commercials</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="arts">Arts & Sporting</option>
+      </select><br><br>
+
+      <label for="message">Additional Notes:</label><br>
+      <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+</body>
+</html>
